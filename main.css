@@ -1,0 +1,115 @@
+:root {
+  --ref-font-color: #fff;
+  --ref-height-element: 60px;
+  --ref-font-size: 20px;
+  --ref-font-color: #fff;
+  --ref-label-background-color: #1b1b1bdb;
+  --ref-custom-padding: 20px;
+}
+
+@font-face {
+  font-family: Tesla;
+  src: url("styles/Tesla.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Tesla;
+  font-weight: bold;
+  src: url("styles/TeslaBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: TeslaBold;
+  src: url("styles/Tesla2.otf") format("opentype");
+}
+
+html,
+body,
+.body {
+  font-family: "Tesla";
+  height: 100%;
+  width: 100%;
+  background: rgb(167, 167, 167);
+  background: linear-gradient(
+    328deg,
+    rgba(167, 167, 167, 1) 0%,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(87, 87, 87, 0.4514180672268907) 11%,
+    rgba(96, 96, 96, 1) 89%,
+    rgba(255, 255, 255, 1) 90%,
+    rgba(162, 162, 162, 1) 100%
+  );
+}
+
+.body {
+  /* background-image: url("https://thatcopy.github.io/catAPI/imgs/jpg/96aff96.jpg"); */
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.body .home-title,
+.body .home-text,
+.body .home-button-container {
+  background: var(--ref-label-background-color);
+  color: var(--ref-font-color);
+  display: inline-block;
+  font-size: var(--ref-font-size);
+  height: var(--ref-height-element);
+  letter-spacing: 2;
+  position: fixed;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  user-select: none;
+}
+
+.body .home-text {
+  top: calc(100% - 2 * var(--ref-height-element));
+}
+
+.next-button,
+.home-title p {
+  display: inline-block;
+  margin-inline: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  user-select: none;
+}
+
+.next-button:hover,
+.home-title p:hover {
+  border: 1px solid rgba(99, 99, 99, 0.449);
+  background: rgba(99, 99, 99, 0.249);
+  user-select: none;
+}
+.next-button:active,
+.home-title p:active {
+  border: 1px solid rgba(110, 110, 110, 0.449);
+  background: rgba(110, 110, 110, 0.249);
+  user-select: none;
+}
+
+.body .home-button-container {
+  top: calc(100% - 1 * var(--ref-height-element));
+}
+
+.next-button {
+  font-family: "TeslaBold";
+  background: #2c2d32;
+  letter-spacing: 5;
+  border: 0;
+  padding: 9px 60px;
+  color: var(--ref-font-color);
+  border-radius: 55px;
+  border: 1px solid rgba(90, 90, 90, 0.449);
+  background: rgba(90, 90, 90, 0.249);
+}
+
+.cache-background {
+  display: none;
+  height: 0;
+  width: 0;
+}
